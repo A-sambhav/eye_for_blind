@@ -1,0 +1,143 @@
+system:
+  name: "VISION+"
+  version: "1.0.0"
+  mode: "blind_assist"  # blind_assist, alzheimer_assist, dual_mode
+  debug: true
+  log_level: "INFO"
+
+performance_targets:
+  object_detection_latency_ms: 100
+  hazard_alert_latency_ms: 300
+  gps_update_rate_hz: 5
+  battery_life_hours: 8
+  false_alert_rate_percent: 5
+  audio_response_latency_ms: 500
+  frame_processing_fps: 10
+  fall_detection_latency_ms: 500
+
+hardware:
+  processor: "arduino_uno_q_sbc"
+  os: "linux"
+  camera:
+    depth: "/dev/video0"
+    rgb: "/dev/video1"
+    width: 640
+    height: 480
+    fps: 30
+  gps:
+    port: "/dev/ttyUSB0"
+    baudrate: 9600
+  imu:
+    i2c_bus: 1
+    address: 0x68
+  audio:
+    speaker: "bone_conduction"
+    microphone: "built_in"
+    sample_rate: 16000
+  battery:
+    i2c_bus: 1
+    address: 0x36
+    capacity_mah: 3000
+    voltage_min: 3.3
+    voltage_max: 4.2
+  button:
+    gpio_pin: 17
+  vibration:
+    gpio_pin: 27
+
+ai:
+  edge_impulse:
+    model_path: "/models"
+    models:
+      navigation: "navigation_ai.eim"
+      objects: "object_recognition.eim"
+      road_safety: "road_safety.eim"
+      alzheimer: "alzheimer_assist.eim"
+  inference:
+    threshold: 0.6
+    nms_threshold: 0.45
+    max_detections: 20
+    input_size: [320, 320]
+
+decision_engine:
+  hazard_priorities:
+    critical: ["fall", "vehicle_approaching", "stair_down", "fire", "emergency"]
+    high: ["stair_up", "vehicle_near", "obstacle_close", "drop_off", "traffic_light_red"]
+    medium: ["person_close", "door", "obstacle_medium", "crosswalk", "traffic_light_yellow"]
+    low: ["person_far", "chair", "table", "bottle", "bag", "cup", "phone", "obstacle_far"]
+  audio_cooldown_ms: 3000
+  max_announcements_per_minute: 10
+  hazard_distance_thresholds:
+    critical: 0.5
+    high: 1.0
+    medium: 2.0
+    low: 4.0
+
+navigation:
+  gps_update_interval_ms: 200
+  route_recalc_threshold_m: 10
+  safe_corridor_width_m: 1.5
+  max_route_deviation_m: 5
+  indoor_mode_distance_m: 20
+  turn_announcement_distance_m: 5
+  arrival_threshold_m: 3
+
+audio:
+  tts:
+    engine: "piper"
+    voice: "en_US-lessac-medium"
+    speed: 1.0
+    volume: 0.8
+  stt:
+    engine: "vosk"
+    model_path: "/models/vosk-model-small-en-us-0.15"
+    sample_rate: 16000
+  wake_word: "vision"
+  command_timeout_ms: 5000
+  bone_conduction_gain: 0.7
+
+alzheimer:
+  enabled: false
+  medication_reminders: true
+  appointment_reminders: true
+  family_recognition: true
+  geofence_enabled: true
+  safe_zone_radius_m: 500
+  home_coordinates: [29.8705, 77.8905]  # IIT Roorkee example
+  medication_schedule: []
+  appointments: []
+  trusted_faces: []
+  daily_routine: {}
+
+fall_detection:
+  enabled: true
+  impact_threshold_g: 2.5
+  freefall_threshold_g: 0.5
+  orientation_change_threshold_deg: 45
+  impact_duration_ms: 200
+  post_impact_immobility_s: 10
+  false_positive_window_s: 5
+
+power:
+  low_battery_threshold_percent: 20
+  critical_battery_threshold_percent: 10
+  sleep_timeout_s: 300
+  deep_sleep_threshold_percent: 15
+  cpu_governor: "powersave"
+
+database:
+  path: "/data/vision_glasses.db"
+  backup_interval_hours: 24
+
+network:
+  wifi_ssid: ""
+  wifi_password: ""
+  bluetooth_name: "VISION+"
+  api_endpoint: ""
+  api_key: ""
+
+logging:
+  path: "/var/log/vision_glasses"
+  max_size_mb: 100
+  retention_days: 7
+  level: "INFO"
