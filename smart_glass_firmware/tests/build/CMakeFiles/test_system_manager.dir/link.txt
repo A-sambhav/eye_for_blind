@@ -1,0 +1,1 @@
+/usr/lib/ccache/cc  -std=c11 -DHOST_BUILD -Wall -Wextra -Wno-unused-parameter -Wno-unused-function -Wno-unused-variable -Wno-unused-but-set-variable -Wno-missing-field-initializers -g -O0 CMakeFiles/test_system_manager.dir/test_system_manager.c.o -o test_system_manager  -lm 

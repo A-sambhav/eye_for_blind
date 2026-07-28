@@ -1,0 +1,2 @@
+/opt/gcc-arm-none-eabi-10-2020-q4-major/bin/arm-none-eabi-ar qc libfreertos_kernel_port.a CMakeFiles/freertos_kernel_port.dir/GCC/ARM_CM7/r0p1/port.c.o
+/opt/gcc-arm-none-eabi-10-2020-q4-major/bin/arm-none-eabi-ranlib libfreertos_kernel_port.a

@@ -1,0 +1,155 @@
+Start testing: Jul 28 20:14 IST
+----------------------------------------------------------
+1/6 Testing: test_config_manager
+1/6 Test: test_config_manager
+Command: "/home/asambhav/Storage/smart_glass/smart_glass_firmware/tests/build/test_config_manager"
+Directory: /home/asambhav/Storage/smart_glass/smart_glass_firmware/tests/build
+"test_config_manager" start time: Jul 28 20:14 IST
+Output:
+----------------------------------------------------------
+Running 10 test(s)...
+  config_init_ok                                     [OK]
+  config_set_get_int                                 [OK]
+  config_set_get_float                               [OK]
+  config_set_get_bool                                [OK]
+  config_set_get_string                              [OK]
+  config_get_int_default                             [OK]
+  config_get_string_default                          [OK]
+  config_overwrite                                   [OK]
+  config_save_and_load                               [OK]
+  config_callback                                    [OK]
+
+10 test(s) total, 0 failure(s)
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"test_config_manager" end time: Jul 28 20:14 IST
+"test_config_manager" time elapsed: 00:00:00
+----------------------------------------------------------
+
+2/6 Testing: test_object_tracking
+2/6 Test: test_object_tracking
+Command: "/home/asambhav/Storage/smart_glass/smart_glass_firmware/tests/build/test_object_tracking"
+Directory: /home/asambhav/Storage/smart_glass/smart_glass_firmware/tests/build
+"test_object_tracking" start time: Jul 28 20:14 IST
+Output:
+----------------------------------------------------------
+Running 8 test(s)...
+  tracker_init_ok                                    [OK]
+  tracker_init_null                                  [OK]
+  tracker_single_detection                           [OK]
+  tracker_two_detections                             [OK]
+  tracker_max_tracks                                 [OK]
+  tracker_get_track_by_id                            [OK]
+  tracker_get_active_count                           [OK]
+  tracker_reset                                      [OK]
+
+8 test(s) total, 0 failure(s)
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"test_object_tracking" end time: Jul 28 20:14 IST
+"test_object_tracking" time elapsed: 00:00:00
+----------------------------------------------------------
+
+3/6 Testing: test_depth_processing
+3/6 Test: test_depth_processing
+Command: "/home/asambhav/Storage/smart_glass/smart_glass_firmware/tests/build/test_depth_processing"
+Directory: /home/asambhav/Storage/smart_glass/smart_glass_firmware/tests/build
+"test_depth_processing" start time: Jul 28 20:14 IST
+Output:
+----------------------------------------------------------
+Running 8 test(s)...
+  depth_init_ok                                      [OK]
+  depth_init_null                                    [OK]
+  depth_process_frame                                [OK]
+  depth_two_frames                                   [OK]
+  depth_temporal_filter                              [OK]
+  depth_roi_min_dist                                 [OK]
+  depth_calibrate                                    [OK]
+  depth_set_threshold                                [OK]
+
+8 test(s) total, 0 failure(s)
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"test_depth_processing" end time: Jul 28 20:14 IST
+"test_depth_processing" time elapsed: 00:00:00
+----------------------------------------------------------
+
+4/6 Testing: test_context_manager
+4/6 Test: test_context_manager
+Command: "/home/asambhav/Storage/smart_glass/smart_glass_firmware/tests/build/test_context_manager"
+Directory: /home/asambhav/Storage/smart_glass/smart_glass_firmware/tests/build
+"test_context_manager" start time: Jul 28 20:14 IST
+Output:
+----------------------------------------------------------
+Running 8 test(s)...
+  context_init_ok                                    [OK]
+  context_init_null                                  [OK]
+  context_scene_indoor                               [OK]
+  context_scene_outdoor                              [OK]
+  context_scene_transition                           [OK]
+  context_get_current_state                          [OK]
+  context_get_location_type                          [OK]
+  context_is_moving                                  [OK]
+
+8 test(s) total, 0 failure(s)
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"test_context_manager" end time: Jul 28 20:14 IST
+"test_context_manager" time elapsed: 00:00:00
+----------------------------------------------------------
+
+5/6 Testing: test_system_manager
+5/6 Test: test_system_manager
+Command: "/home/asambhav/Storage/smart_glass/smart_glass_firmware/tests/build/test_system_manager"
+Directory: /home/asambhav/Storage/smart_glass/smart_glass_firmware/tests/build
+"test_system_manager" start time: Jul 28 20:14 IST
+Output:
+----------------------------------------------------------
+Running 5 test(s)...
+  sys_manager_init                                   [OK]
+  sys_manager_register_module                        [OK]
+  sys_manager_get_info                               [OK]
+  sys_manager_mode                                   [OK]
+  sys_manager_uptime                                 [OK]
+
+5 test(s) total, 0 failure(s)
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"test_system_manager" end time: Jul 28 20:14 IST
+"test_system_manager" time elapsed: 00:00:00
+----------------------------------------------------------
+
+6/6 Testing: test_logging_manager
+6/6 Test: test_logging_manager
+Command: "/home/asambhav/Storage/smart_glass/smart_glass_firmware/tests/build/test_logging_manager"
+Directory: /home/asambhav/Storage/smart_glass/smart_glass_firmware/tests/build
+"test_logging_manager" start time: Jul 28 20:14 IST
+Output:
+----------------------------------------------------------
+Running 5 test(s)...
+  logging_init_ok                                    [OK]
+  logging_init_null                                  [OK]
+  logging_info                                       [OK]
+  logging_verbose_filter                             [OK]
+  logging_get_stats                                  [OK]
+
+5 test(s) total, 0 failure(s)
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"test_logging_manager" end time: Jul 28 20:14 IST
+"test_logging_manager" time elapsed: 00:00:00
+----------------------------------------------------------
+
+End testing: Jul 28 20:14 IST

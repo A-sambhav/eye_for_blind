@@ -1,0 +1,23 @@
+CMakeFiles/smart_glass_firmware.dir/src/hal/src/imu_hal.c.o: \
+ /home/asambhav/Storage/smart_glass/smart_glass_firmware/src/hal/src/imu_hal.c \
+ /opt/gcc-arm-none-eabi-10-2020-q4-major/lib/gcc/arm-none-eabi/10.2.1/include/stddef.h \
+ /home/asambhav/Storage/smart_glass/smart_glass_firmware/src/hal/include/imu_hal.h \
+ /home/asambhav/Storage/smart_glass/smart_glass_firmware/src/middleware/include/message_types.h \
+ /opt/gcc-arm-none-eabi-10-2020-q4-major/lib/gcc/arm-none-eabi/10.2.1/include/stdint.h \
+ /opt/gcc-arm-none-eabi-10-2020-q4-major/arm-none-eabi/include/stdint.h \
+ /opt/gcc-arm-none-eabi-10-2020-q4-major/arm-none-eabi/include/machine/_default_types.h \
+ /opt/gcc-arm-none-eabi-10-2020-q4-major/arm-none-eabi/include/sys/features.h \
+ /opt/gcc-arm-none-eabi-10-2020-q4-major/arm-none-eabi/include/_newlib_version.h \
+ /opt/gcc-arm-none-eabi-10-2020-q4-major/arm-none-eabi/include/sys/_intsup.h \
+ /opt/gcc-arm-none-eabi-10-2020-q4-major/arm-none-eabi/include/sys/_stdint.h \
+ /opt/gcc-arm-none-eabi-10-2020-q4-major/lib/gcc/arm-none-eabi/10.2.1/include/stdbool.h \
+ /home/asambhav/Storage/smart_glass/smart_glass_firmware/src/drivers/include/i2c_imu_drv.h \
+ /home/asambhav/Storage/smart_glass/smart_glass_firmware/third_party/freertos-kernel/include/FreeRTOS.h \
+ /home/asambhav/Storage/smart_glass/smart_glass_firmware/src/FreeRTOSConfig.h \
+ /home/asambhav/Storage/smart_glass/smart_glass_firmware/third_party/freertos-kernel/include/projdefs.h \
+ /home/asambhav/Storage/smart_glass/smart_glass_firmware/third_party/freertos-kernel/include/portable.h \
+ /home/asambhav/Storage/smart_glass/smart_glass_firmware/third_party/freertos-kernel/include/deprecated_definitions.h \
+ /home/asambhav/Storage/smart_glass/smart_glass_firmware/third_party/freertos-kernel/portable/GCC/ARM_CM7/r0p1/portmacro.h \
+ /home/asambhav/Storage/smart_glass/smart_glass_firmware/third_party/freertos-kernel/include/mpu_wrappers.h \
+ /home/asambhav/Storage/smart_glass/smart_glass_firmware/third_party/freertos-kernel/include/task.h \
+ /home/asambhav/Storage/smart_glass/smart_glass_firmware/third_party/freertos-kernel/include/list.h

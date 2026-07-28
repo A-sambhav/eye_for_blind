@@ -1,0 +1,2 @@
+/opt/gcc-arm-none-eabi-10-2020-q4-major/bin/arm-none-eabi-ar qc libfreertos_kernel.a CMakeFiles/freertos_kernel.dir/croutine.c.o CMakeFiles/freertos_kernel.dir/event_groups.c.o CMakeFiles/freertos_kernel.dir/list.c.o CMakeFiles/freertos_kernel.dir/queue.c.o CMakeFiles/freertos_kernel.dir/stream_buffer.c.o CMakeFiles/freertos_kernel.dir/tasks.c.o CMakeFiles/freertos_kernel.dir/timers.c.o CMakeFiles/freertos_kernel.dir/portable/MemMang/heap_5.c.o
+/opt/gcc-arm-none-eabi-10-2020-q4-major/bin/arm-none-eabi-ranlib libfreertos_kernel.a

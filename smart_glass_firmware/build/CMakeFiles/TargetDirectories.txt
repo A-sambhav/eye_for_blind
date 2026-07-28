@@ -1,0 +1,9 @@
+/home/asambhav/Storage/smart_glass/smart_glass_firmware/build/CMakeFiles/smart_glass_firmware.dir
+/home/asambhav/Storage/smart_glass/smart_glass_firmware/build/CMakeFiles/edit_cache.dir
+/home/asambhav/Storage/smart_glass/smart_glass_firmware/build/CMakeFiles/rebuild_cache.dir
+/home/asambhav/Storage/smart_glass/smart_glass_firmware/build/freertos_build/CMakeFiles/freertos_kernel.dir
+/home/asambhav/Storage/smart_glass/smart_glass_firmware/build/freertos_build/CMakeFiles/edit_cache.dir
+/home/asambhav/Storage/smart_glass/smart_glass_firmware/build/freertos_build/CMakeFiles/rebuild_cache.dir
+/home/asambhav/Storage/smart_glass/smart_glass_firmware/build/freertos_build/portable/CMakeFiles/freertos_kernel_port.dir
+/home/asambhav/Storage/smart_glass/smart_glass_firmware/build/freertos_build/portable/CMakeFiles/edit_cache.dir
+/home/asambhav/Storage/smart_glass/smart_glass_firmware/build/freertos_build/portable/CMakeFiles/rebuild_cache.dir

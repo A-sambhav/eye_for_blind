@@ -1,0 +1,9 @@
+/home/asambhav/Storage/smart_glass/smart_glass_firmware/tests/build/CMakeFiles/test_config_manager.dir
+/home/asambhav/Storage/smart_glass/smart_glass_firmware/tests/build/CMakeFiles/test_object_tracking.dir
+/home/asambhav/Storage/smart_glass/smart_glass_firmware/tests/build/CMakeFiles/test_depth_processing.dir
+/home/asambhav/Storage/smart_glass/smart_glass_firmware/tests/build/CMakeFiles/test_context_manager.dir
+/home/asambhav/Storage/smart_glass/smart_glass_firmware/tests/build/CMakeFiles/test_system_manager.dir
+/home/asambhav/Storage/smart_glass/smart_glass_firmware/tests/build/CMakeFiles/test_logging_manager.dir
+/home/asambhav/Storage/smart_glass/smart_glass_firmware/tests/build/CMakeFiles/test.dir
+/home/asambhav/Storage/smart_glass/smart_glass_firmware/tests/build/CMakeFiles/edit_cache.dir
+/home/asambhav/Storage/smart_glass/smart_glass_firmware/tests/build/CMakeFiles/rebuild_cache.dir
